@@ -12,21 +12,25 @@
     <title>Caixa</title>
 </head>
 <style>
-    body{
+    body {
         max-height: 100vh;
         width: 100vw;
     }
+
     * {
         font-family: 'Roboto', sans-serif;
         text-align: center;
         border: none;
     }
-    .container2{
+    
+    .container2 {
+        border: 1px solid #00000020;
         margin-top: 5px;
-        height: 700px;
+        height: 70vh;
         overflow: auto;
     }
-    .row {
+
+    .container2 .row {
         border-bottom: 1px solid black;
         font-size: 1.3rem;
         margin-top: 10px;
@@ -35,12 +39,20 @@
     .form-group * {
         font-size: 1.3rem;
     }
+    .container .btn{
+        margin-top: 25px;
+        width: 20vw;
+        height: 15vh;
+    }
+    small {
+        font-size: 15px !important;
+    }
 </style>
 
 <body>
     <div class="container">
         <div class="form-group">
-            <label for="exampleInputEmail1">Código</label>
+            <small id="labelCod"></small>
             <input type="number" class="form-control" id="inputCod" aria-describedby="emailHelp"
                 placeholder="Digite o código">
         </div>
@@ -57,9 +69,16 @@
                 <div class="col">R$ 2.50</div>
                 <div class="col">R$ 5.00</div>
             </div>
-            
+        </div>
+        <div class="container">
+            <div class="row row2">
+                <div class="col"><button type="button" class="btn btn-primary btn-lg btn-danger">Cancelar Comanda</button></div>
+                <div class="col"><button type="button" class="btn btn-primary btn-lg btn-dark">Adicionar Produto</button></div>
+                <div class="col"><button type="button" class="btn btn-primary btn-lg btn-success">Confirmar Venda</button></div>
+            </div>
         </div>
     </div>
+    <script src="./assets/index.js"></script>
 </body>
 
 </html>
