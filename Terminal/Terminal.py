@@ -41,19 +41,3 @@ if __name__ == '__main__':
             print(f'Inserido o produto {codProduto} {qtd} vezes na comanda {comanda}')
         except:
             print('Esta comanda não está criada')
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    

@@ -39,10 +39,10 @@
     .form-group * {
         font-size: 1.3rem;
     }
-    .container .btn{
+    .container3 .btn{
         margin-top: 25px;
         width: 20vw;
-        height: 15vh;
+        height: 10vh;
     }
     small {
         font-size: 15px !important;
@@ -53,24 +53,21 @@
     <div class="container">
         <div class="form-group">
             <small id="labelCod"></small>
-            <input type="number" class="form-control" id="inputCod" aria-describedby="emailHelp"
+            <div class="row"><input type="text" class="form-control" id="inputCod" aria-describedby="emailHelp"
                 placeholder="Digite o código">
+                <button type="button" id="btnCatch" class="btn btn-primary">Receber Comanda</button></div>
         </div>
-        <div class="container container2">
+        <div id="table" class="container container2">
             <div class="row">
+                <div class="col">Código</div>
                 <div class="col-sm-6">Item</div>
                 <div class="col">Qtd</div>
                 <div class="col">Valor</div>
                 <div class="col">Total</div>
             </div>
-            <div class="row">
-                <div class="col-sm-6">Pão de queijo</div>
-                <div class="col">2x</div>
-                <div class="col">R$ 2.50</div>
-                <div class="col">R$ 5.00</div>
-            </div>
+            
         </div>
-        <div class="container">
+        <div class="container container3">
             <div class="row row2">
                 <div class="col"><button type="button" class="btn btn-primary btn-lg btn-danger">Cancelar Comanda</button></div>
                 <div class="col"><button type="button" class="btn btn-primary btn-lg btn-dark">Adicionar Produto</button></div>
